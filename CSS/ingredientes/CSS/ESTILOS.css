@@ -1,0 +1,129 @@
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #025036;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding: 50px 20px; 
+  background-color: #f9f9f9; 
+  border-radius: 60px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0); 
+}
+
+.intro-text h2 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #087453;}
+
+.intro-text p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.1;
+}
+
+
+.h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 0; /* Ajustar margen */
+}
+
+.section-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 40px;
+  margin: 50px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+  background-color: transparent;
+}
+
+.image-box {
+  flex: 1;
+  max-width: 43%; 
+  border: 1px solid transparent;
+  border-radius: 0 80px 0 80px;
+  overflow: hidden;
+  position: relative;
+  margin: 0; 
+  padding: 0; 
+}
+
+.image-box img {
+  width: 100%; 
+  display: block; 
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.1); /* Efecto de zoom */
+  filter: brightness(1.1); /* Más brillo */
+}
+
+
+
+.text-box {
+  flex: 2;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.text-box h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #6d0244;
+}
+
+
+.text-box p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
+
+@media (max-width: 768px) {
+  .section-with-image {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-box {
+    margin-bottom: 20px;
+  }
+
+  .text-box {
+    padding: 10px 20px;
+  }
+}
+
+ul {
+  list-style-type: disc; /* Puedes usar circle, square, o none */
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+ul li {
+  font-family: "Lato", sans-serif; /* O la tipografía que prefieras */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #461111; /* Ajusta el color según tu diseño */
+}
+
